@@ -27,7 +27,7 @@ export default function LoanSimulator() {
             type="number" 
             value={amount || ''}
             onChange={(e) => setAmount(e.target.valueAsNumber || 0)}
-            className="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-gray-900 font-medium"
+            className="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none transition-all text-gray-900 font-medium"
           />
         </div>
 
@@ -37,7 +37,7 @@ export default function LoanSimulator() {
             type="number" 
             value={months || ''}
             onChange={(e) => setMonths(e.target.valueAsNumber || 0)}
-            className="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-gray-900 font-medium"
+            className="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none transition-all text-gray-900 font-medium"
           />
         </div>
 
@@ -47,7 +47,7 @@ export default function LoanSimulator() {
             type="number"
             value={interestRate || ''}
             onChange={(e) => setInterestRate(e.target.valueAsNumber || 0)}
-            className="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-gray-900 font-medium"
+            className="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none transition-all text-gray-900 font-medium"
           />
         </div>
 
@@ -56,7 +56,7 @@ export default function LoanSimulator() {
           <select 
             value={paymentMethod}
             onChange={(e) => setPaymentMethod(e.target.value as PaymentMethod)}
-            className="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-gray-900 font-medium cursor-pointer"
+            className="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none transition-all text-gray-900 font-medium cursor-pointer"
           >
             <option value="french">Sistema Francés</option>
             <option value="american">Sistema Americano</option>
